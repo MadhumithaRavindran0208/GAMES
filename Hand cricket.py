@@ -85,8 +85,13 @@ elif bowling_or_batting_u=="BATTING":
     del(bowling_or_batting_u) 
 else:
     print("Check your input")
+    
+print("Total runs by you=",runs_u)   
+print("Total runs by the computer=",runs_c)  
 
 if runs_u>runs_c:
-        print("Congrats! You have won the game against the computer")
+    print("Congrats! You have won the game against the computer")
 elif runs_c>runs_u:
-        print("Sorry!You have lost the game against the computer")
+    print("Sorry!You have lost the game against the computer")
+elif runs_c==runs_u:
+    print("Oops!It's a draw")
