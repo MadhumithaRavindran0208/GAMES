@@ -2,6 +2,7 @@ print("Rock paper Scissor game")
 import random
 possibilities=["Rock"," paper ","Scissor"]
 win=loss=0
+n=1
 while n!=0:
     for i in range (3):
         n=random.randint(0,2)
@@ -46,4 +47,5 @@ while n!=0:
         print("Congrats! You have won the game")
     else:
         print("The game is a draw") 
+
     n=int(input("If you wanna play again enter any number other than 0:"))
