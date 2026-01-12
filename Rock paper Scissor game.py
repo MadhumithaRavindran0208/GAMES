@@ -1,4 +1,4 @@
-print("Rock paper Scissor game")
+print("----Rock paper Scissor game----")
 import random
 possibilities=["Rock"," paper ","Scissor"]
 win=loss=0
@@ -7,7 +7,7 @@ while n!=0:
     for i in range (3):
         n=random.randint(0,2)
         comp=possibilities[n].lower()
-        print("Rock"," paper ","Scissor")
+        print("Rock , paper , Scissor")
         user=input("Enter your choice:")
         user=user.lower()
         while user not in ["rock","paper","scissor"]:
@@ -15,30 +15,30 @@ while n!=0:
             user=input("Enter your choice:")
             user=user.lower()
         if comp==user:
-            print("User's choice=",user.upper," Computer's choice=",comp)
+            print("User's choice=",user.title()," Computer's choice=",comp.title())
             print("Draw")
         elif comp=="rock" and user=="scissor":
-            print("User's choice=",user.upper," Computer's choice=",comp)
+            print("User's choice=",user.title()," Computer's choice=",comp.title())
             print("Computer wins")
             win+=1
         elif comp=="rock" and user=="paper":
-            print("User's choice=",user.upper," Computer's choice=",comp)
+            print("User's choice=",user.title()," Computer's choice=",comp.title())
             print("User wins")
             loss+=1
         elif comp=="paper" and user=="rock":    
-            print("User's choice=",user.upper," Computer's choice=",comp)
+            print("User's choice=",user.title()," Computer's choice=",comp.title())
             print("Computer wins")
             win+=1
         elif comp=="paper" and user=="scissor":
-            print("User's choice=",user.upper," Computer's choice=",comp)
+            print("User's choice=",user.title()," Computer's choice=",comp.title())
             print("User wins")
             loss+=1
         elif comp=="scissor" and user=="rock":
-            print("User's choice=",user.upper," Computer's choice=",comp)
+            print("User's choice=",user.title()," Computer's choice=",comp.title())
             print("User wins")
             loss+=1
         elif comp=="scissor" and user=="paper":
-            print("User's choice=",user.upper," Computer's choice=",comp)
+            print("User's choice=",user.title()," Computer's choice=",comp.title())
             print("Computer wins")
             win+=1
     if win>loss:
@@ -47,5 +47,4 @@ while n!=0:
         print("Congrats! You have won the game")
     else:
         print("The game is a draw") 
-
     n=int(input("If you wanna play again enter any number other than 0:"))
