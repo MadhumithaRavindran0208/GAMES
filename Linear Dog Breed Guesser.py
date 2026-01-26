@@ -1,16 +1,16 @@
 import random
 dog_breeds = {
     "easy": (
-        "labrador retriever","golden retriever",
-        "pug","cavalier king charles spaniel"
+        "labradorretriever","goldenretriever",
+        "pug"
     ),
     "medium": (         
-        "goldendoodle","border terrier",
-        "australian shepherd","boxer"
+        "goldendoodle","borderterrier",
+        "australianshepherd","boxer"
     ),
     "hard": (
-        "belgian malinois","siberian husky",
-        "akita","border collie%"
+        "belgianmalinois","siberianhusky",
+        "akita","bordercollie%"
     )
 }
 n=1
@@ -69,4 +69,5 @@ while n==1 :
         elif play_again == "yes":
             n=1
     else:
+
         print("Sorry, you've run out of lives. The dog breed was:", chosen_breed)
